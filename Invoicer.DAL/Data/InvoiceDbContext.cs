@@ -5,7 +5,7 @@ namespace Invoicer.DAL.Data;
 
 public class InvoiceDbContext : DbContext
 {
-	public InvoiceDbContext(DbContextOptions options) : base(options)
+	public InvoiceDbContext(DbContextOptions<InvoiceDbContext> options) : base(options)
 	{ }
 
 	public DbSet<User> Users => Set<User>();

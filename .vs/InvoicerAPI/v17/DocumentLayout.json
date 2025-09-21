@@ -1,7 +1,47 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{015D273A-3CB8-4DE7-8BE6-949C2C2F0C4F}|InvoicerAPI\\InvoicerAPI.csproj|c:\\users\\tunay\\source\\repos\\invoicerapi\\invoicerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015D273A-3CB8-4DE7-8BE6-949C2C2F0C4F}|InvoicerAPI\\InvoicerAPI.csproj|solutionrelative:invoicerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51350FEB-7723-4F26-9136-B53055E81DAD}|Invoicer.Business\\Invoicer.Business.csproj|c:\\users\\tunay\\source\\repos\\invoicerapi\\invoicer.business\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51350FEB-7723-4F26-9136-B53055E81DAD}|Invoicer.Business\\Invoicer.Business.csproj|solutionrelative:invoicer.business\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0DF3C6C-1536-4CFD-A3E9-E0D2EF5E9180}|Invoicer.DAL\\Invoicer.DAL.csproj|c:\\users\\tunay\\source\\repos\\invoicerapi\\invoicer.dal\\repositories\\implementations\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0DF3C6C-1536-4CFD-A3E9-E0D2EF5E9180}|Invoicer.DAL\\Invoicer.DAL.csproj|solutionrelative:invoicer.dal\\repositories\\implementations\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{015D273A-3CB8-4DE7-8BE6-949C2C2F0C4F}|InvoicerAPI\\InvoicerAPI.csproj|c:\\users\\tunay\\source\\repos\\invoicerapi\\invoicerapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015D273A-3CB8-4DE7-8BE6-949C2C2F0C4F}|InvoicerAPI\\InvoicerAPI.csproj|solutionrelative:invoicerapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51350FEB-7723-4F26-9136-B53055E81DAD}|Invoicer.Business\\Invoicer.Business.csproj|c:\\users\\tunay\\source\\repos\\invoicerapi\\invoicer.business\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51350FEB-7723-4F26-9136-B53055E81DAD}|Invoicer.Business\\Invoicer.Business.csproj|solutionrelative:invoicer.business\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0DF3C6C-1536-4CFD-A3E9-E0D2EF5E9180}|Invoicer.DAL\\Invoicer.DAL.csproj|c:\\users\\tunay\\source\\repos\\invoicerapi\\invoicer.dal\\repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0DF3C6C-1536-4CFD-A3E9-E0D2EF5E9180}|Invoicer.DAL\\Invoicer.DAL.csproj|solutionrelative:invoicer.dal\\repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1216E9C1-3DB3-4782-AE03-B16A7E661FEC}|Invoicer.Core\\Invoicer.Core.csproj|c:\\users\\tunay\\source\\repos\\invoicerapi\\invoicer.core\\dtos\\userdtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1216E9C1-3DB3-4782-AE03-B16A7E661FEC}|Invoicer.Core\\Invoicer.Core.csproj|solutionrelative:invoicer.core\\dtos\\userdtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0DF3C6C-1536-4CFD-A3E9-E0D2EF5E9180}|Invoicer.DAL\\Invoicer.DAL.csproj|c:\\users\\tunay\\source\\repos\\invoicerapi\\invoicer.dal\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0DF3C6C-1536-4CFD-A3E9-E0D2EF5E9180}|Invoicer.DAL\\Invoicer.DAL.csproj|solutionrelative:invoicer.dal\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{015D273A-3CB8-4DE7-8BE6-949C2C2F0C4F}|InvoicerAPI\\InvoicerAPI.csproj|c:\\users\\tunay\\source\\repos\\invoicerapi\\invoicerapi\\validators\\userdtovalidators\\createuserdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015D273A-3CB8-4DE7-8BE6-949C2C2F0C4F}|InvoicerAPI\\InvoicerAPI.csproj|solutionrelative:invoicerapi\\validators\\userdtovalidators\\createuserdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/InvoiceDB/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,12 +49,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 219,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
@@ -26,6 +62,132 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\InvoicerAPI\\Program.cs",
+              "RelativeDocumentMoniker": "InvoicerAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\InvoicerAPI\\Program.cs",
+              "RelativeToolTip": "InvoicerAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T23:41:06.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\Invoicer.Business\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Invoicer.Business\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\Invoicer.Business\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Invoicer.Business\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T23:09:51.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\Invoicer.Core\\DTOs\\UserDTOs\\UpdateUserDTO.cs",
+              "RelativeDocumentMoniker": "Invoicer.Core\\DTOs\\UserDTOs\\UpdateUserDTO.cs",
+              "ToolTip": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\Invoicer.Core\\DTOs\\UserDTOs\\UpdateUserDTO.cs",
+              "RelativeToolTip": "Invoicer.Core\\DTOs\\UserDTOs\\UpdateUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T23:01:57.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\Invoicer.DAL\\Repositories\\Implementations\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Invoicer.DAL\\Repositories\\Implementations\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\Invoicer.DAL\\Repositories\\Implementations\\UserRepository.cs",
+              "RelativeToolTip": "Invoicer.DAL\\Repositories\\Implementations\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T22:34:45.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateUserDTOValidator.cs",
+              "DocumentMoniker": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\InvoicerAPI\\Validators\\UserDTOValidators\\CreateUserDTOValidator.cs",
+              "RelativeDocumentMoniker": "InvoicerAPI\\Validators\\UserDTOValidators\\CreateUserDTOValidator.cs",
+              "ToolTip": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\InvoicerAPI\\Validators\\UserDTOValidators\\CreateUserDTOValidator.cs",
+              "RelativeToolTip": "InvoicerAPI\\Validators\\UserDTOValidators\\CreateUserDTOValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T22:27:14.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\Invoicer.DAL\\Repositories\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "Invoicer.DAL\\Repositories\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\Invoicer.DAL\\Repositories\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "Invoicer.DAL\\Repositories\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T21:54:46.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\Invoicer.DAL\\Repositories\\Implementations\\Repository.cs",
+              "RelativeDocumentMoniker": "Invoicer.DAL\\Repositories\\Implementations\\Repository.cs",
+              "ToolTip": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\Invoicer.DAL\\Repositories\\Implementations\\Repository.cs",
+              "RelativeToolTip": "Invoicer.DAL\\Repositories\\Implementations\\Repository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T21:53:16.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\Invoicer.Business\\Services\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "Invoicer.Business\\Services\\Implementations\\UserService.cs",
+              "ToolTip": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\Invoicer.Business\\Services\\Implementations\\UserService.cs",
+              "RelativeToolTip": "Invoicer.Business\\Services\\Implementations\\UserService.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAWwGMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T21:47:12.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dbo.Users.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/InvoiceDB/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/InvoiceDB/True/SqlTable/dbo.Users.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-09-20T21:46:43.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\InvoicerAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "InvoicerAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\TUNAY\\source\\repos\\InvoicerAPI\\InvoicerAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "InvoicerAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAADgv0YAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T21:37:57.52Z"
             }
           ]
         },

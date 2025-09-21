@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoicerAPI", "InvoicerAPI\InvoicerAPI.csproj", "{015D273A-3CB8-4DE7-8BE6-949C2C2F0C4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoicerAPI", "InvoicerAPI\InvoicerAPI.csproj", "{015D273A-3CB8-4DE7-8BE6-949C2C2F0C4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoicer.Core", "Invoicer.Core\Invoicer.Core.csproj", "{1216E9C1-3DB3-4782-AE03-B16A7E661FEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invoicer.Core", "Invoicer.Core\Invoicer.Core.csproj", "{1216E9C1-3DB3-4782-AE03-B16A7E661FEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoicer.DAL", "Invoicer.DAL\Invoicer.DAL.csproj", "{E0DF3C6C-1536-4CFD-A3E9-E0D2EF5E9180}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invoicer.DAL", "Invoicer.DAL\Invoicer.DAL.csproj", "{E0DF3C6C-1536-4CFD-A3E9-E0D2EF5E9180}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoicer.Business", "Invoicer.Business\Invoicer.Business.csproj", "{51350FEB-7723-4F26-9136-B53055E81DAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invoicer.Business", "Invoicer.Business\Invoicer.Business.csproj", "{51350FEB-7723-4F26-9136-B53055E81DAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

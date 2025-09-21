@@ -9,5 +9,7 @@ public class InvoiceRow: BaseEntity
     public decimal Amount { get; set; }
     public decimal Sum { get; set; }
 
+
     public Guid InvoiceId { get; set; }
+    public Invoice Invoice { get; set; }
 }

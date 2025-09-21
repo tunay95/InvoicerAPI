@@ -10,3 +10,4 @@ C:\Users\TUNAY\source\repos\InvoicerAPI\Invoicer.Core\obj\Debug\net8.0\Invoicer.
 C:\Users\TUNAY\source\repos\InvoicerAPI\Invoicer.Core\obj\Debug\net8.0\refint\Invoicer.Core.dll
 C:\Users\TUNAY\source\repos\InvoicerAPI\Invoicer.Core\obj\Debug\net8.0\Invoicer.Core.pdb
 C:\Users\TUNAY\source\repos\InvoicerAPI\Invoicer.Core\obj\Debug\net8.0\ref\Invoicer.Core.dll
+C:\Users\TUNAY\source\repos\InvoicerAPI\Invoicer.Core\obj\Debug\net8.0\Invoicer.Core.csproj.AssemblyReference.cache

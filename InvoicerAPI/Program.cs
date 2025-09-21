@@ -1,4 +1,10 @@
+using AutoMapper;
+using Invoicer.Business.Services.Implementations;
+using Invoicer.Business.Services.Interfaces;
+using Invoicer.Core.MappingProfiles;
 using Invoicer.DAL.Data;
+using Invoicer.DAL.Repositories.Implementations;
+using Invoicer.DAL.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,11 +13,19 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<InvoiceDbContext>(opt=>
+builder.Services.AddDbContext<InvoiceDbContext>(opt =>
 {
 	opt.UseSqlServer(builder.Configuration.GetConnectionString("InvDB"));
 });
 
+
+builder.Services.AddAutoMapper(cfg =>
+{
+	cfg.AddProfile<UserMP>();
+});
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
