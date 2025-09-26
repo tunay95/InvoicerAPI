@@ -10,7 +10,4 @@ public class User:BaseEntity
 	public string Password { get; set; } = string.Empty;
 	public string? Address { get; set; } = string.Empty;
 	public string? PhoneNumber { get; set; } = string.Empty;
-
-	public ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();	
-
 }

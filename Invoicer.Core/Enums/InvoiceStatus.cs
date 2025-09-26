@@ -3,8 +3,8 @@
 public enum InvoiceStatus
 {
 	Created = 1,
-	Sended,
-	Received,
 	Paid,
-	Canceled
+	Sent,
+	Received,
+	Canceled 
 }

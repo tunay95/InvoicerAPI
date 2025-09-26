@@ -1,4 +1,4 @@
-﻿namespace Invoicer.Core.DTOs.UserDTOs;
+﻿namespace Invoicer.Business.DTOs.UserDTOs;
 
 public record ChangePasswordDTO
 {

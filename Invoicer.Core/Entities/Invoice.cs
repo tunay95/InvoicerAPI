@@ -13,6 +13,6 @@ public class Invoice : BaseEntity
 	public ICollection<InvoiceRow> InvoiceRows { get; set; } = new List<InvoiceRow>();
 
 
-	public Guid UserId { get; set; }
-	public User User { get; set; }
+	public Guid CustomerId { get; set; }
+	public Customer Customer { get; set; }
 }

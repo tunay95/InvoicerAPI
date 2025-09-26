@@ -11,4 +11,5 @@ public class InvoiceDbContext : DbContext
 	public DbSet<User> Users => Set<User>();
 	public DbSet<Invoice> Invoices => Set<Invoice>();
 	public DbSet<InvoiceRow> InvoiceRows => Set<InvoiceRow>();
+	public DbSet<Customer> Customers => Set<Customer>();
 }

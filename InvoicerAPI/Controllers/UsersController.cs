@@ -1,103 +1,132 @@
 ﻿using Invoicer.Business.Services.Interfaces;
-using Invoicer.Core.DTOs.UserDTOs;
-using Invoicer.Core.Entities;
+using Invoicer.Business.DTOs.UserDTOs;
 using InvoicerAPI.Validators.UserDTOValidators;
 using Microsoft.AspNetCore.Mvc;
+using Invoicer.Business.DTOs.CustomerDTOs;
+using InvoicerAPI.Validators.CustomerDTOValidators;
 
-namespace InvoicerAPI.Controllers
+namespace InvoicerAPI.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class UsersController : ControllerBase
 {
-	[ApiController]
-	[Route("api/[controller]")]
-	public class UsersController : ControllerBase
+	private readonly IUserService _userService;
+
+	public UsersController(IUserService userService)
 	{
-		private readonly IUserService _userService;
+		_userService = userService;
+	}
 
-		public UsersController(IUserService userService)
+
+	[HttpGet("[action]")]
+	public async Task<IActionResult> GetAll([FromQuery] UserRequestDTO userRequestDTO)
+	{
+		var users = await _userService.GetAllAsync(userRequestDTO);
+
+		return Ok(users);
+	}
+
+
+	[HttpGet("[action]")]
+	public async Task<IActionResult> Get(string? search)
+	{
+		var users = await _userService.GetAsync(search);
+
+		return Ok(users);
+	}
+
+
+	[HttpGet("[action]/{id:guid}")]
+	public async Task<IActionResult> GetById([FromRoute] Guid id)
+	{
+		var users = await _userService.GetByIdAsync(id);
+
+		return Ok(users);
+	}
+
+
+	[HttpPost("[action]")]
+	public async Task<IActionResult> Create([FromBody] CreateUserDTO createUserDTO)
+	{
+		var validateResult = await new CreateUserDTOValidator().ValidateAsync(createUserDTO);
+
+
+		if (!validateResult.IsValid)
 		{
-			_userService = userService;
+			var errors = validateResult.Errors
+				.Select(e => $"{e.PropertyName}: {e.ErrorMessage}");
+
+			return BadRequest(errors);
 		}
 
+		var user = await _userService.CreateAsync(createUserDTO);
 
-		[HttpGet("[action]")]
-		public async Task<IActionResult> GetAll(string? search)
+		return Created("User Successfully Created !!", user);
+	}
+
+
+	[HttpPut("[action]/{id:guid}")]
+	public async Task<IActionResult> Update(Guid id, [FromBody] UpdateUserDTO? updateUserDTO)
+	{
+		var validateResult = await new UpdateUserDTOValidator().ValidateAsync(updateUserDTO!);
+
+		if (!validateResult.IsValid)
 		{
-			var users = await _userService.GetAllAsync(search);
+			var errors = validateResult.Errors
+				.Select(e => $"{e.PropertyName}: {e.ErrorMessage}");
 
-			return Ok(users);
+			return BadRequest(errors);
 		}
 
+		await _userService.UpdateAsync(id, updateUserDTO);
 
-		[HttpGet("[action]")]
-		public async Task<IActionResult> Get(string? search)
+		return Ok("User Successfully Updated !!");
+	}
+
+
+	[HttpPatch("[action]/{id:guid}")]
+	public async Task<IActionResult> ChangePasswordAsync(Guid id, ChangePasswordDTO changePasswordDTO)
+	{
+		var validateResult = await new ChangePasswordDTOValidator().ValidateAsync(changePasswordDTO!);
+
+		if (!validateResult.IsValid)
 		{
-			var users = await _userService.GetAsync(search);
+			var errors = validateResult.Errors
+				.Select(e => $"{e.PropertyName}: {e.ErrorMessage}");
 
-			return Ok(users);
+			return BadRequest(errors);
 		}
 
+		await _userService.ChangePasswordAsync(id, changePasswordDTO);
 
-		[HttpGet("[action]/{id:guid}")]
-		public async Task<IActionResult> GetById([FromRoute] Guid id)
-		{
-			var users = await _userService.GetByIdAsync(id);
-
-			return Ok(users);
-		}
+		return Ok(new { message = "User Password Successfully Changed !!" });
+	}
 
 
-		[HttpPost("[action]")]
-		public async Task<IActionResult> Create([FromBody] CreateUserDTO createUserDTO)
-		{
-			var validateResult = await new CreateUserDTOValidator().ValidateAsync(createUserDTO);
+	[HttpPatch("[action]/{id:guid}")]
+	public async Task<IActionResult> SoftDelete(Guid id)
+	{
+		await _userService.SoftDeleteAsync(id);
+
+		return Ok(new { message = "User Successfully Soft-Deleted !!" });
+	}
 
 
-			if (!validateResult.IsValid)
-			{
-				var errors = validateResult.Errors
-					.Select(e => $"{e.PropertyName}: {e.ErrorMessage}");
+	[HttpPatch("[action]/{id:guid}")]
+	public async Task<IActionResult> Recover(Guid id)
+	{
+		await _userService.RecoverAsync(id);
 
-				return BadRequest(errors);
-			}
-
-			var user = await _userService.CreateAsync(createUserDTO);
-
-			return Created("User Successfully Created !!", user);
-		}
+		return Ok(new { message = "User Successfully Recovered !!" });
+	}
 
 
-		[HttpPut("[action]/{id:guid}")]
-		public async Task<IActionResult> Update(Guid id, [FromForm] UpdateUserDTO? updateUserDTO)
-		{
-			await _userService.UpdateAsync(id, updateUserDTO);
+	[HttpDelete("[action]/{id:guid}")]
+	public async Task<IActionResult> Remove(Guid id)
+	{
+		await _userService.RemoveAsync(id);
 
-			return Ok("User Successfully Updated !!");
-		}
-
-
-		[HttpPatch("[action]/{id:guid}")]
-		public async Task<IActionResult> SoftDelete(Guid id)
-		{
-			await _userService.SoftDeleteAsync(id);
-
-			return Ok(new { message = "User Successfully Soft-Deleted !!" });
-		}
-
-
-		[HttpPatch("[action]/{id:guid}")]
-		public async Task<IActionResult> Recover(Guid id)
-		{
-			await _userService.RecoverAsync(id);
-
-			return Ok(new { message = "User Successfully Recovered !!" });
-		}
-
-
-		[HttpDelete("[action]/{id:guid}")]
-		public async Task<IActionResult> Remove(Guid id)
-		{
-			await _userService.RemoveAsync(id);
-
-			return Ok(new { message = "User Successfully Removed !!" });
-		}
+		return Ok(new { message = "User Successfully Removed !!" });
 	}
 }

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Invoicer.Business/1.0.0": {
         "dependencies": {
+          "AutoMapper": "15.0.1",
           "Invoicer.DAL": "1.0.0"
         },
         "runtime": {
@@ -568,7 +569,6 @@
       },
       "Invoicer.Core/1.0.0": {
         "dependencies": {
-          "AutoMapper": "15.0.1",
           "Microsoft.Extensions.DependencyInjection": "8.0.1"
         },
         "runtime": {

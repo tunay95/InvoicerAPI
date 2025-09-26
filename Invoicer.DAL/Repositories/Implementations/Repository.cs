@@ -1,6 +1,6 @@
 ﻿using Invoicer.Core.Entities.Common;
 using Invoicer.DAL.Data;
-using Invoicer.DAL.Repositories.Interfaces;
+using Invoicer.DAL.Repositories.Intrfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -20,15 +20,13 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEnti
 	public DbSet<TEntity> Table => _dbContext.Set<TEntity>();
 
 
-	public IQueryable<TEntity> GetAllAsync(Expression<Func<TEntity, bool>>? filter = null, params string[] includes)
+	public IQueryable<TEntity> GetAllAsync(Expression<Func<TEntity, bool>>? filter = null, Func<IQueryable<TEntity>, IQueryable<TEntity>>? include = null)
 	{
 		var query = Table.AsQueryable();
 
-		if (includes is not null)
-		{
-			foreach (var include in includes)
-				query = query.Include(include);
-		}
+		if (include is not null)
+			query = include(query);
+
 
 		return filter is not null
 			? query.Where(filter)

@@ -951,7 +951,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "AutoMapper": "15.0.1",
           "Microsoft.Extensions.DependencyInjection": "8.0.1"
         },
         "compile": {
@@ -2472,6 +2471,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AutoMapper >= 15.0.1",
       "Invoicer.DAL >= 1.0.0"
     ]
   },
@@ -2523,6 +2523,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[15.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
